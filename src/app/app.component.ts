@@ -2,6 +2,7 @@ import {
   ChangeDetectorRef,
   ChangeDetectionStrategy,
   Component,
+  OnInit,
 } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   name = 'Decoded Frontend';
   topicName = 'Change Detection in Angular';
   isVisible = true;
@@ -28,4 +29,6 @@ export class AppComponent {
   getInfo() {
     return `1M Views`;
   }
+
+  ngOnInit(): void {}
 }
