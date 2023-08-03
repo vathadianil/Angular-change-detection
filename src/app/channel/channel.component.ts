@@ -1,11 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-channel',
   templateUrl: './channel.component.html',
   styleUrls: ['./channel.component.scss'],
 })
-export class ChannelComponent {
+export class ChannelComponent implements OnInit {
   @Input('name') name = '';
   constructor() {}
+  ngOnInit(): void {}
 }
