@@ -26,9 +26,9 @@ export class AppComponent implements OnInit {
     }, 3000);
   }
 
-  getInfo() {
-    return `1M Views `;
-  }
+  // getInfo() {
+  //   return `1M Views `;
+  // }
 
   ngOnInit(): void {}
 }
