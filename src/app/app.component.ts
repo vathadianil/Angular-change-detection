@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   getInfo() {
-    return `1M Views | 10k Likes | 2 Favourites`;
+    return `1M Views | 10k Likes `;
   }
 
   ngOnInit(): void {}
